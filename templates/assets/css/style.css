@@ -1,0 +1,149 @@
+/* Customization of the body of the website */
+body {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%; 
+    background-color:ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 1st Part of the CSS : customization of the top of the page  */
+.title {
+    display : flex ;
+    align-items: center;
+    justify-content: center;
+    color: cornflowerblue;
+}
+.Toppage {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    /* background-color: white; */
+    border: black 2px solid;
+}
+.Toppage img {
+    width: 8%;
+}
+
+/* 2nd Part of the CSS : customization of the content of the page  */
+.content {
+    width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.content img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+/*Cutomization of the selection button in the generator part*/
+#Fontlist {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+}
+#ColorList {
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+}
+#ColorBG {
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+}
+#FontSize{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+/*Cutomization of the conversion buttons*/
+#Go {
+    padding: 15px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#Go:hover {
+    background-color:cornflowerblue; 
+    color: black;
+}
+#PDF {
+    padding: 15px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#PDF:hover {
+    background-color:#f44336; 
+    color: black;
+}
+#TXT {
+    padding: 15px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+#TXT:hover {
+    background-color: #4CAF50;  
+    color: black;
+}
+#IMG {
+    padding: 15px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+}
+#IMG:hover {
+    background-color: #eb5e0b;
+    color: black;
+}
+
+/* 3rd Part of the CSS : The Generator zone*/
+.Array {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.CodeDisplay {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+.TextZone {
+    justify-self: center;
+    display: grid;
+}
+.TextZone textarea {
+    width: 50%;
+    height: 60px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 7px;
+}
+.CodeDisplay iframe{
+    border:none; 
+    width:100%;
+    height: 500px; 
+    background-color:#f8f1f1;
+    border-radius: 50px
+}
+
+/* Part of the CSS for the darkmode screen */
+@media (prefers-color-scheme: dark) {
+    body {
+    background-color: #1c1c1e;
+    color: #fefefe;
+    }
+    a {
+    color: #5fa9ee;
+    }
+    img {
+    filter: grayscale(20%);
+    }
+}
